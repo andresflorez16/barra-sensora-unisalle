@@ -7,11 +7,13 @@ import {
   LineElement,
   Title,
   Tooltip,
-  Legend
+  Legend,
+  registerables
 } from 'chart.js'
 import { Chart as Canvas } from 'react-chartjs-2'
 
 ChartJS.register(
+  ...registerables,
   CategoryScale,
   LinearScale,
   PointElement,
