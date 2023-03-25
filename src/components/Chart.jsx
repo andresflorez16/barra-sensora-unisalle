@@ -87,7 +87,7 @@ export const dataChart = ({ data }) => {
 
 function Chart ({ barra, data }) {
   return (
-    <div className='backdrop-blur-md sm:h-64 sm:w-full w-[90%]'>
+    <div className='sm:h-64 w-[90%] md:w-[35rem]'>
       <Canvas type='line' className='bg-[#f2f2f2ff] min-h-[20rem] sm:min-h-0 rounded-md lg:min-w-[35rem]' options={options(barra)} data={dataChart({ data })} />
     </div>
   )

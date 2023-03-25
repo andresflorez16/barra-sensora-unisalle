@@ -10,6 +10,7 @@ specifiers:
   postcss: ^8.4.21
   react: ^18.2.0
   react-chartjs-2: 5.2.0
+  react-csv: ^2.2.2
   react-dom: ^18.2.0
   react-router-dom: 6.9.0
   standard: 17.0.0
@@ -22,6 +23,7 @@ dependencies:
   firebase: 9.18.0
   react: 18.2.0
   react-chartjs-2: 5.2.0_t5yjg6ab35jnsudnh2qdighszm
+  react-csv: 2.2.2
   react-dom: 18.2.0_react@18.2.0
   react-router-dom: 6.9.0_biqbaboplfbrettd7655fr4n2y
   zustand: 4.3.6_react@18.2.0
@@ -2920,6 +2922,10 @@ packages:
     dependencies:
       chart.js: 4.2.1
       react: 18.2.0
+    dev: false
+
+  /react-csv/2.2.2:
+    resolution: {integrity: sha512-RG5hOcZKZFigIGE8LxIEV/OgS1vigFQT4EkaHeKgyuCbUAu9Nbd/1RYq++bJcJJ9VOqO/n9TZRADsXNDR4VEpw==}
     dev: false
 
   /react-dom/18.2.0_react@18.2.0:

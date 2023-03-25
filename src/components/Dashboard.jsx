@@ -69,18 +69,18 @@ const Dashboard = ({ barra }) => {
       {
         !empty && data.length > 0 && (
           <div className='w-full sm:w-4/5 text-center'>
-            <div className='flex justify-center items-center gap-3 backdrop-blur-md flex-col xl:flex-row'>
-              <div className='flex flex-col gap-3 '>
-                <span className='font-bold text-sm'>Búsqueda por fecha:</span>
-                <input type='date' ref={queryDate} onChange={handleChangeDate} className='p-0.5 rounded-md' />
-                {
+            <div className='flex justify-center items-center xl:items-end gap-3 flex-col min-[1256px]:flex-row'>
+              <div>
+                <div className='flex flex-col gap-1'>
+                  <h1 className='font-bold text-2xl'>{barra}</h1>
+                  <span className='font-bold text-sm'>Búsqueda por fecha:</span>
+                  <input type='date' ref={queryDate} onChange={handleChangeDate} className='p-0.5 rounded-md w-32 mx-auto mb-1' />
+                  {
                   date.length > 0 && (
                     <button onClick={handleRealtime} className='bg-[#0a3356] text-white p-2 rounded-md hover:shadow-xl hover:bg-[#0e497c] focus:shadow-xl transition-all duration-300'>Realtime</button>
                   )
                 }
-              </div>
-              <div>
-                <h1 className='font-bold text-2xl'>{barra}</h1>
+                </div>
                 <Table data={queryData} />
               </div>
               <Chart barra={barra} data={queryData} />
